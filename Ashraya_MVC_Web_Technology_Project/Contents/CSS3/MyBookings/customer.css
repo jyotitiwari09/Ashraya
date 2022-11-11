@@ -1,0 +1,117 @@
+.list-container{
+    margin: top 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    padding-top: 90px;
+    
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+  color:#333;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.house{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-top: 1px solid #ccc;
+    background-color: white;
+    border-radius: 12px;
+}
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 58%;
+}
+.house-img img{
+    width: 70%;
+    height: 90%;
+    border-radius: 12px;
+}
+.house-info h3{
+    font-weight:600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.house-price{
+    text-align: right;
+}
+.house-price h4{
+    font-size:20px;
+}
+.house-price h4 span{
+    font-size:16px;
+    font-weight: 500 ;
+}
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+    background-color: white;
+}
+.sidebar h2{
+    font-weight: 500;
+}
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    color:#555;
+    margin-bottom: 10px;
+}
+.filter p{
+    flex: 1;
+}
+filter input{
+    margin:15px;
+    cursor: pointer;
+}
+.bn3 {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgb(255, 255, 255);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: #7d2ae8;
+  }
+  
+  .bn3:hover {
+    color: black;
+    background-color: (255, 255, 255);
+  }
+  .book{
+      text-align: right;
+      padding-right: 0px;
+      padding-top:50px;
+  }
+@media only screen and (max-width: 700px) {
+    .list-container{
+        padding-top: 100px;
+    }
+    .left-col,.right-col,.house-img,.house-info{
+        flex-basis: 100%;
+    }
+}

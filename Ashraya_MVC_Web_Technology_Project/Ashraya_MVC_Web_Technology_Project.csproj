@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A1E7D90-9B84-4486-B541-FA10E1258027}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ashraya_MVC_Web_Technology_Project</RootNamespace>
+    <AssemblyName>Ashraya_MVC_Web_Technology_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\Yaser Shaikh\Downloads\Generate_PDF_Send_Email\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AshrayaController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminLogin.cs" />
+    <Compile Include="Models\Admin_Delete_Customer.cs" />
+    <Compile Include="Models\Admin_Delete_Feedbacks.cs" />
+    <Compile Include="Models\Admin_Delete_Owner.cs" />
+    <Compile Include="Models\Admin_Delete_Verification.cs" />
+    <Compile Include="Models\Admin_Profile_Update.cs" />
+    <Compile Include="Models\CheckBook.cs" />
+    <Compile Include="Models\Code.cs" />
+    <Compile Include="Models\Contacts.cs" />
+    <Compile Include="Models\DeleteBooking.cs" />
+    <Compile Include="Models\Feedback.cs" />
+    <Compile Include="Models\FeedbackRemove.cs" />
+    <Compile Include="Models\ForgetPassword.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\PG.cs" />
+    <Compile Include="Models\PGDelete.cs" />
+    <Compile Include="Models\Registration.cs" />
+    <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\RoomUpdate.cs" />
+    <Compile Include="Models\UpdateAccount.cs" />
+    <Compile Include="Models\VerificationOfRegistration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Contents\CSS3\Aboutuss.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\AdminDashboard\adminstyle.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\AdminDashboard\customer.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\AdminDashboard\logincss.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\DisplayAllUsers\customer.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\DisplayAllUsers\customerbooking.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\DisplayAllUsers\logincss.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\ForgetPassword\democustprofile.css" />
+    <Content Include="Contents\CSS3\AdminDashboard\ForgetPassword\logincss.css" />
+    <Content Include="Contents\CSS3\Bill\bill.css" />
+    <Content Include="Contents\CSS3\Bookings\customerroombooking.css" />
+    <Content Include="Contents\CSS3\Bookings\logincss.css" />
+    <Content Include="Contents\CSS3\Code.css" />
+    <Content Include="Contents\CSS3\ContactUs.css" />
+    <Content Include="Contents\CSS3\CustomerDashboard\customer.css" />
+    <Content Include="Contents\CSS3\CustomerDashboard\edphil.jpg" />
+    <Content Include="Contents\CSS3\CustomerDashboard\logincss.css" />
+    <Content Include="Contents\CSS3\CustomerDashboard\RoomDetails.css" />
+    <Content Include="Contents\CSS3\CustomerProfile\democustprofile.css" />
+    <Content Include="Contents\CSS3\CustomerProfile\logincss.css" />
+    <Content Include="Contents\CSS3\Feedback\Feedbacks_CSS.css" />
+    <Content Include="Contents\CSS3\Feedback\logincss.css" />
+    <Content Include="Contents\CSS3\Homepage.css" />
+    <Content Include="Contents\CSS3\Homepage\StyleSheet1.css" />
+    <Content Include="Contents\CSS3\MyFeedback\customer.css" />
+    <Content Include="Contents\CSS3\MyFeedback\customerbooking.css" />
+    <Content Include="Contents\CSS3\MyFeedback\logincss.css" />
+    <Content Include="Contents\Images\Homepage\Background\home.jpg" />
+    <Content Include="Contents\CSS3\logincss.css" />
+    <Content Include="Contents\CSS3\logincssx.css" />
+    <Content Include="Contents\CSS3\MyBookings\customer.css" />
+    <Content Include="Contents\CSS3\MyBookings\customerbooking.css" />
+    <Content Include="Contents\CSS3\MyBookings\logincss.css" />
+    <Content Include="Contents\CSS3\OwnerDashboard\customer.css" />
+    <Content Include="Contents\CSS3\OwnerDashboard\democustprofile.css" />
+    <Content Include="Contents\CSS3\OwnerDashboard\logincss.css" />
+    <Content Include="Contents\CSS3\OwnerProfile\democustprofile.css" />
+    <Content Include="Contents\CSS3\OwnerProfile\logincss.css" />
+    <Content Include="Contents\CSS3\Payment\logincss.css" />
+    <Content Include="Contents\CSS3\Payment\payment.css" />
+    <Content Include="Contents\CSS3\Table\animate.css" />
+    <Content Include="Contents\CSS3\Table\bootstrap.min.css" />
+    <Content Include="Contents\CSS3\Table\font-awesome.min.css" />
+    <Content Include="Contents\CSS3\Table\main.css" />
+    <Content Include="Contents\CSS3\Table\perfect-scrollbar.css" />
+    <Content Include="Contents\CSS3\Table\select2.min.css" />
+    <Content Include="Contents\CSS3\Table\util.css" />
+    <Content Include="Contents\CSS3\Verify.css" />
+    <Content Include="Contents\CSS3\Logins.css" />
+    <Content Include="Contents\CSS3\Registrations.css" />
+    <Content Include="Contents\Images\AboutUs\edphil.jpg" />
+    <Content Include="Contents\Images\AboutUs\jyoti.jpg" />
+    <Content Include="Contents\Images\AboutUs\seema.jpg" />
+    <Content Include="Contents\Images\AboutUs\yaser.jpg" />
+    <Content Include="Contents\Images\Bill\logo.png" />
+    <Content Include="Contents\Images\Homepage\Background\bg-1.jpg" />
+    <Content Include="Contents\Images\Homepage\Background\bg-2.jpg" />
+    <Content Include="Contents\Images\Homepage\Background\card.jpg" />
+    <Content Include="Contents\Images\Payment\card_img.png" />
+    <Content Include="Contents\Images\PG\ Capture.PNG" />
+    <Content Include="Contents\Images\PG\1.PNG" />
+    <Content Include="Contents\Images\Rooms\1.PNG" />
+    <Content Include="Contents\Javascript\AddPG.js" />
+    <Content Include="Contents\Javascript\AddRoom.js" />
+    <Content Include="Contents\Javascript\AdminDeleteCustomerAndOwner.js" />
+    <Content Include="Contents\Javascript\AdminForgetPassword.js" />
+    <Content Include="Contents\Javascript\AdminLogin.js" />
+    <Content Include="Contents\Javascript\Booking.js" />
+    <Content Include="Contents\Javascript\Code.js" />
+    <Content Include="Contents\Javascript\ContactUs.js" />
+    <Content Include="Contents\Javascript\CustomerDashboard.js" />
+    <Content Include="Contents\Javascript\DeletePG.js" />
+    <Content Include="Contents\Javascript\Export.js" />
+    <Content Include="Contents\Javascript\Feedback.js" />
+    <Content Include="Contents\Javascript\Homepage.js" />
+    <Content Include="Contents\Javascript\html2canvas.min.js" />
+    <Content Include="Contents\Javascript\FeedbackInfo.js" />
+    <Content Include="Contents\Javascript\Login.js" />
+    <Content Include="Contents\Javascript\MYbooking.js" />
+    <Content Include="Contents\Javascript\MyFeedback.js" />
+    <Content Include="Contents\Javascript\NoData.js" />
+    <Content Include="Contents\Javascript\pdfmake.min.js" />
+    <Content Include="Contents\Javascript\Registration.js" />
+    <Content Include="Contents\Javascript\UpdateRegistration.js" />
+    <Content Include="Contents\Javascript\Verify.js" />
+    <Content Include="Contents\Uploads\Capture.PNG" />
+    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
+    <Content Include="Content\sweetalert\docs.css" />
+    <Content Include="Content\sweetalert\sweet-alert.css" />
+    <Content Include="Content\sweetalert\thumbs-up.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Ashraya\AboutUs\AboutUs.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\AdminCheckVerificationDetails.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\AdminDashboard.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\AdminLogin.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Admin_Forget_Password.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_Bookings.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_Customers_Delete.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_Feedbacks.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_Owners.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_Owners_Delete.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_PG.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_Rooms.aspx" />
+    <Content Include="Views\Ashraya\AdminDashbaord\Display_All_Customers.aspx" />
+    <Content Include="Views\Ashraya\Bill\Bill.aspx" />
+    <Content Include="Views\Ashraya\Bookings\Bookings.aspx" />
+    <Content Include="Views\Ashraya\Code\Code.aspx" />
+    <Content Include="Views\Ashraya\ContactUs\ContactPageView.aspx" />
+    <EmbeddedResource Include="Views\Ashraya\CustomerDashboard\Dashboard_Customer.aspx" />
+    <Content Include="Views\Ashraya\CustomerDashboard\RoomDetails.aspx" />
+    <Content Include="Views\Ashraya\CustomerProfile\CustomerProfile.aspx" />
+    <Content Include="Views\Ashraya\Feedback\Feedback.aspx" />
+    <Content Include="Views\Ashraya\Feedback\MyFeedBacks.aspx" />
+    <Content Include="Views\Ashraya\ForgetPassword\ForgetPassword.aspx" />
+    <Content Include="Views\Ashraya\MyBookings\MyBookings.aspx" />
+    <Content Include="Views\Ashraya\OwnerDashboard\DeletePG.aspx" />
+    <Content Include="Views\Ashraya\OwnerDashboard\MyRooms.aspx" />
+    <Content Include="Views\Ashraya\OwnerDashboard\Profile.aspx" />
+    <Content Include="Views\Ashraya\OwnerDashboard\Dashboard_Owner.aspx" />
+    <Content Include="Views\Ashraya\OwnerDashboard\OwnerAddPG.aspx" />
+    <Content Include="Views\Ashraya\OwnerDashboard\OwnerAddRoom.aspx" />
+    <Content Include="Views\Ashraya\OwnerDashboard\UpdateDeleteRoom.aspx" />
+    <Content Include="Views\Ashraya\Payment\Payment.aspx" />
+    <Content Include="Views\Ashraya\RegistrationVerification\RegistrationVerification.aspx" />
+    <Content Include="Views\Ashraya\Registration\Registration.aspx" />
+    <Content Include="Views\Ashraya\Homepage\Homepage.aspx" />
+    <Content Include="Views\Ashraya\Login\Login.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\sweetalert\sweet-alert.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\Uploads\Ashraya.bak" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50826</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50381/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

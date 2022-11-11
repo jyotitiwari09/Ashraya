@@ -1,0 +1,35 @@
+->Speech Recognition
+->Data Compression
+->Translation
+->Sentiment Analysis.
+->Technology USed by Everyone
+->Search ==> Konkani(Dictionary){Online}
+->Grammer / Linguistics
+														---------
+->Tourist English ==> |Computer| ===> Farmer Village(Konkani)
+                                                       |                          |
+													   ----------
+													   Speech to Text(English) (ASR System)
+													   English Text to Konkani Text (MT System)
+													   Konkano Text to Kankani Speech (ITS System)
+													  
+->ILCI ( Indian Langauage Corpora Initiative)
+->Consortium Project 
+	=>Phase I --> 25K 					+ 				25K
+										(Health)    					(Tourism)
+	=>Phase II -->20K    				+					30K
+										
+->Word NET 
+	=>Indo Word NET(18 National Language)
+	1: Dravidian Wordnet Consortisum
+	(kannada,Telgu,Tamil,Malyalam)
+	2: North-East Wordnet Consortium
+	(Assame,Bodo,manipuri)
+	3: Indradhanush Wordnet Consoritum
+	(kONKANI,Kashmiri,Bangla,Odisa,Punjabi,Gujrati,Urdu)
+
+
+Assignment 
+TDIL(Read About)
+Assign 1 -> Parallel COrposes
+Assign 2 -> Wordnet Corpose
